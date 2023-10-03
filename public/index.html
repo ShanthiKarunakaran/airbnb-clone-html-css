@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
+  <title>Airbnb clone</title>
+</head>
+<body>
+  <header class="sticky top-0 bg-white z-100">
+        <div class="grid grid-col-1 sm:grid-cols-3 items-center p-5 md:p-10 w-screen py-4 border-b-[1px]">
+          <!--navbar-->
+          <div class="relative flex items-center cursor-pointer">
+            <img class="hidden sm:inline-block w-20 h-30" src="images/logo.png" alt="airbnb logo">
+          </div>
+          
+          <ul class="flex justify-evenly items-center border shadow-md p-2 max-w-sm rounded-full text-sm font-medium">
+            <li><a class="border-r-2 px-2" href="">Anywhere</a></li>
+            <li><a class="border-r-2 px-2" href="">Anyweek</a></li>
+            <li>
+              <a class="text-gray-500 px-2" href="">Add guests</a>
+              <i class="fa-solid fa-magnifying-glass bg-red-700 rounded-full text-white p-2"></i>
+            </li> 
+          </ul>
+        
+          <ul class="hidden sm:flex ustify-end gap-8 items-center text-sm font-medium">
+            <li><a href="">Airbnb  your home</a></li>
+            <li><a href="">
+              <span class="material-symbols-outlined">language</span></a>
+            </li>
+            <li>
+              <a class="rounded-full shadow-md  border-gray-900 py-2 pl-3 px-2 pr-1.25" href="">
+                <i class="fa-solid fa-bars px-2"></i>
+                <i class="fa-regular fa-user p-2 rounded-full bg-gray-900 text-white"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+          <!--filterbar-->
+          <div class="pt-4">
+            <ul class="flex items-center flex-row text-xs text-gray-400 gap-8"> 
+              <li class="flex flex-col  hover:text-black pl-16"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_1.jpeg" class="h-6 w-6" alt="">
+                <span>Amazing Pools</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_2.jpeg" class="h-6 w-6" alt="">
+                <span>Lake Front</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_3.jpeg" class="h-6 w-6" alt="">
+                <span>Design</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_4.jpeg" class="h-6 w-6" alt="">
+                <span>Amazing views</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_5.jpeg" class="h-6 w-6" alt="">
+                <span>Countryside</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_6.jpeg" class="h-6 w-6" alt="">
+                <span>Mansions</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_7.jpeg" class="h-6 w-6" alt="">
+                <span>Beachfront</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_8.jpeg" class="h-6 w-6" alt="">
+                <span>Cabins</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_9.jpeg" class="h-6 w-6" alt="">
+                <span>Luxe</span>
+              </a></li>
+              <li class="flex flex-col hover:text-black"><a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./images/img_10.jpeg" class="h-6 w-6" alt="">
+                <span>OMG</span>
+              </a></li>
+              <li>
+                <span class="material-symbols-outlined pl-1">
+                  arrow_circle_right
+                </span>
+              </li>
+              <li>
+                <a href="" class="flex border rounded-xl shadow-md p-2 justify-around items-center">
+                  <span class="material-symbols-outlined pr-2.5">
+                    sync_alt
+                  </span>
+                  <span class="text-black text-xs font-medium">Filters</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="flex border rounded-md p-2 items-center">
+                  <span class="text-black pr-2">Display total before taxes</span>
+                  <span class="material-symbols-outlined">
+                    toggle_off
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <main class="pt-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div class="">
+              <img src="./images/main_img1.webp" alt="">
+              <div class="flex justify-between pt-3"> 
+                <div>
+                  <p>Joshaou tree</p>
+                  <p>391 miles away</p>
+                  <p>Oct 1-6</p>
+                </div>
+                <div class="">
+                  <i class="fa-solid fa-star"></i>
+                  <span class="">5.0</span>
+                </div>
+              </div>
+            </div>
+              <div class="">
+                <img src="./images/main_img2.webp" alt="">
+                <div class="flex justify-between pt-3"> 
+                  <div>
+                    <p>Joshaou tree</p>
+                    <p>391 miles away</p>
+                    <p>Oct 1-6</p>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="">5.0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <img src="./images/main_img3.webp" alt="">
+                <div class="flex justify-between pt-3"> 
+                  <div>
+                    <p>Joshaou tree</p>
+                    <p>391 miles away</p>
+                    <p>Oct 1-6</p>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="">5.0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <img src="./images/main_img4.webp" alt="">
+                <div class="flex justify-between pt-3"> 
+                  <div>
+                    <p>Joshaou tree</p>
+                    <p>391 miles away</p>
+                    <p>Oct 1-6</p>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="">5.0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <img src="./images/main_img5.webp" alt="">
+                <div class="flex justify-between pt-3"> 
+                  <div>
+                    <p>Joshaou tree</p>
+                    <p>391 miles away</p>
+                    <p>Oct 1-6</p>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="">5.0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <img src="./images/main_img6.webp" alt="">
+                <div class="flex justify-between pt-3"> 
+                  <div>
+                    <p>Joshaou tree</p>
+                    <p>391 miles away</p>
+                    <p>Oct 1-6</p>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="">5.0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <img src="./images/main_img7.webp" alt="">
+                <div class="flex justify-between pt-3"> 
+                  <div>
+                    <p>Joshaou tree</p>
+                    <p>391 miles away</p>
+                    <p>Oct 1-6</p>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="">5.0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <img src="./images/main_img8.webp" alt="">
+                <div class="flex justify-between pt-3"> 
+                  <div>
+                    <p>Joshaou tree</p>
+                    <p>391 miles away</p>
+                    <p>Oct 1-6</p>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="">5.0</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+      
+             
+          </div>
+        </main>
+        <footer></footer>
+    
+</body>
+</html>
